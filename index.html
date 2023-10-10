@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <form class="mb-3" action="" id="productform">
+            <label for="amount">Selling price:</label>
+            <input type="text" id="amount" name="amount" required>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="ProductName" required>
+            <label for="category">Choose A Category:</label>
+            <select id="category" name="category" required>
+                <option value="Food-list">Food Items</option>
+                <option value="Electronic-list">Electronic Items</option>
+                <option value="Skincare-list">Skincare Items</option>
+                <option value="Accessories-list">Mobile Accessories</option>
+                <option value="Groceries-list">Groceries</option>
+            </select>
+            <button class="btn btn-primary ml-2" type="submit" id="submitbtn">Add Product</button>
+        </form>
+        <div class="list-group" id="productContainer">
+            <h1>Products</h1>
+            <h2>Food Items</h2>
+            <div class="list-group " id="Food-list"></div>
+            <h2>Electronic Items</h2>
+            <div class="list-group " id="Electronic-list"></div>
+            <h2>Skincare Items</h2>
+            <div class="list-group " id="Skincare-list"></div>
+            <h2>Mobile Accessories</h2>
+            <div class="list-group " id="Accessories-list"></div>
+            <h2>Groceries</h2>
+            <div class="list-group " id="Groceries-list"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
